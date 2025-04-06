@@ -18,3 +18,7 @@
 # Вихідні дані:
 # Python
 
+with open('files\\input.txt', 'r') as file:
+    data = file.readlines()
+    print(max(map(str.strip, data), key=len))
+
